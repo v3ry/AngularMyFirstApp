@@ -13,6 +13,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { ROUTES } from './app.routes';
+import { MyFormComponent } from './my-form/my-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ROUTES } from './app.routes';
     DisplayGuestsDirective,
     DisplayMoviesDirective,
     SignUpComponent,
-    MenuComponent
+    MenuComponent,
+    MyFormComponent
   ],
   imports: [
     BrowserModule,
