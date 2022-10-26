@@ -10,11 +10,8 @@ import { Skill } from '../models/skill.model';
 export class DevelopperComponent implements OnInit {
 
   myskill: Skill[] = [{name:'toto',logo:'tata',site: 'titi'}];
-  @Input()
   name = this.myskill[0].name;
-  @Input()
   logo = this.myskill[0].logo;
-  @Input()
   site = this.myskill[0].site;
   developer: Developer[] = [{firstName: 'John', lastName: 'Toto', age: 36,gender: 'Male',bio:"blablabla",skills: this.myskill}];
 
