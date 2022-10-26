@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MonComposantComponent } from './mon-composant/mon-composant.component';
@@ -14,6 +15,13 @@ import { MenuComponent } from './menu/menu.component';
 
 import { ROUTES } from './app.routes';
 import { MyFormComponent } from './my-form/my-form.component';
+import { SearchMovieComponent } from './search-movie/search-movie.component';
+import { ChildComponent } from './child/child.component';
+import { AppMagicOvenComponent } from './app-magic-oven/app-magic-oven.component';
+import { DevelopperComponent } from './developper/developper.component';
+import { SkillComponent } from './skill/skill.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,11 +33,17 @@ import { MyFormComponent } from './my-form/my-form.component';
     DisplayMoviesDirective,
     SignUpComponent,
     MenuComponent,
-    MyFormComponent
+    MyFormComponent,
+    SearchMovieComponent,
+    ChildComponent,
+    AppMagicOvenComponent,
+    DevelopperComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
     FormsModule ,
+    ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
