@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -17,4 +17,12 @@ export class AppComponent {
   movieList: string[] = ["The GodFather", "Star Wars", "Stargate"];
 
   showMovies: boolean = true;
+
+  onomatopoeiaList: Array<string>= []
+
+
+  onReceiveNewOnomatopia(event:string): void {
+    console.log("event : " +event);
+    this.onomatopoeiaList.push(event);
+  }
 }

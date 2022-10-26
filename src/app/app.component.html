@@ -1,2 +1,9 @@
 <app-menu></app-menu>
+
+
+<div *ngFor="let res of onomatopoeiaList">
+    <p>{{res}}</p>
+</div>
+
 <router-outlet></router-outlet>
+<app-create-onomatopia (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"></app-create-onomatopia>

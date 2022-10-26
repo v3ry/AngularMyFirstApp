@@ -13,7 +13,7 @@ export class ChildComponent implements OnInit {
   numberOfCookies: number = 0;
 
   isCooked: boolean = false;
-
+  cookiesCooked: number = 0;
   // On initialise notre propriété avec une valeur par défaut
 // On décore notre propriété avec @Input()
  @Input() myInputData: string = "" 
@@ -24,6 +24,11 @@ export class ChildComponent implements OnInit {
   }
   startCooking() {
     this.isCooked = true;
+  }
+
+  onGetCookies(event: number): void {
+    this.cookiesCooked += event;
+    console.log(this.cookiesCooked += event);
   }
 
 }

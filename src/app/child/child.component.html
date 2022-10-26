@@ -28,11 +28,11 @@
   </div>
   
   <app-app-magic-oven
-    [startCooking]="isCooked"
-    [numberOfCookies]="numberOfCookies"
-    [flour]="flourQuantity"
-    [salt]="saltQuantity"
-    [sugar]="sugarQuantity"
-    [egg]="eggQuantity"
-  >
+  [startCooking]="isCooked"
+  [numberOfCookies]="numberOfCookies"
+  [flour]="flourQuantity"
+  [salt]="saltQuantity"
+  [sugar]="sugarQuantity"
+  [egg]="eggQuantity"
+  (cookies)="onGetCookies($event)">
   </app-app-magic-oven>

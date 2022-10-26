@@ -20,6 +20,7 @@ import { ChildComponent } from './child/child.component';
 import { AppMagicOvenComponent } from './app-magic-oven/app-magic-oven.component';
 import { DevelopperComponent } from './developper/developper.component';
 import { SkillComponent } from './skill/skill.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 
 
 
@@ -38,7 +39,8 @@ import { SkillComponent } from './skill/skill.component';
     ChildComponent,
     AppMagicOvenComponent,
     DevelopperComponent,
-    SkillComponent
+    SkillComponent,
+    CreateOnomatopiaComponent
   ],
   imports: [
     BrowserModule,
